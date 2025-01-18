@@ -1,0 +1,11 @@
+/* Corrected CSS */
+#container {
+  width: calc(100vw - 20px); /* Use vw for viewport width */
+}
+
+.element {
+  width: calc(50% - 10px);
+  /* Correctly using parentheses and operator precedence */
+}
+
+/*Avoid using calc() on properties that depend on their own calculated values such as margin, padding, and width. Doing so may trigger unexpected cascading effects*/
